@@ -6,7 +6,7 @@
     <AssemblyName>AspNetCoreToDo.Web</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>AspNetCoreToDo.Web</PackageId>
-    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <RuntimeFrameworkVersion>1.0.12</RuntimeFrameworkVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net452+win81</PackageTargetFallback>
   </PropertyGroup>
 
