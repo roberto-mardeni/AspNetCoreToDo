@@ -13,7 +13,7 @@ namespace AspNetCoreToDo.Web.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")
+                .HasAnnotation("ProductVersion", "1.0.3")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("AspNetCoreToDo.Web.Models.Category", b =>
@@ -23,7 +23,7 @@ namespace AspNetCoreToDo.Web.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasAnnotation("MaxLength", 50);
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
 
@@ -40,7 +40,7 @@ namespace AspNetCoreToDo.Web.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasAnnotation("MaxLength", 500);
+                        .HasMaxLength(500);
 
                     b.Property<bool>("IsComplete");
 

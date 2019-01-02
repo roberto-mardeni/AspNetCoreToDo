@@ -44,6 +44,12 @@
                 principalTable: "Categories",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
+
+            foreach (var category in new string[] { @"Work", @"Personal" })
+            {
+                var sql = $"INSERT INTO [dbo].[Categories] ([Name]) VALUES ('{category}');";
+                migrationBuilder.Sql(sql);
+            }
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
