@@ -76,3 +76,4 @@ _[Ss]cripts
 
 #VS 2015
 .vs/config/applicationhost.config
+/.vs/AspNetCoreToDo
